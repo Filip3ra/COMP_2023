@@ -1,0 +1,152 @@
+/*************************************
+ * Autor: Filipi Maciel              *
+ ************************************/
+
+
+
+PARSER_BEGIN(comp)
+
+public class comp {
+  public static void main(String args[]) throws ParseException {
+	comp parser;
+    parser = new comp(System.in);
+    parser.comp_input();
+	}
+}
+
+PARSER_END(comp)
+
+SKIP :
+{
+  " "
+| "\t"
+| "\n"
+| "\r"
+}
+
+
+
+
+/************
+ * KEYWORDS *
+ ************/
+
+TOKEN :
+{
+  < ABSTRACT: "abstract" >
+| < AS: "as" >
+| < BASE: "base" >
+| < BREAK: "break" >
+| < CASE: "case" >
+| < CATCH: "catch" >
+| < CHECKED: "checked" >
+| < CLASS: "class" >
+| < CONST: "const" >
+| < CONTINUE: "continue" >
+| < _DEFAULT: "DEFAULT" >
+| < DO: "do" >
+| < ELSE: "else" >
+| < EVENT: "event" >
+| < EXPLICIT: "explicit" >
+| < EXTERN: "extern" >
+| < _FALSE: "FALSE" >
+| < FINALLY: "finally" >
+| < FIXED: "fixed" >
+| < FOR: "for" >
+| < FOREACH: "foreach" >
+| < GOTO: "goto" >
+| < IF: "if" >
+| < IMPLICIT: "implicit" >
+| < IN: "in" >
+| < INTERFACE: "interface" >
+| < INTERNAL: "internal" >
+| < IS: "is" >
+| < LOCK: "lock" >
+| < NAMESPACE: "namespace" >
+| < NEW: "new" >
+| < _NULL: "NULL" >
+| < OPERATOR: "operator" >
+| < OUT: "out" >
+| < OVERRIDE: "override" >
+| < PARAMS: "params" >
+| < PRIVATE: "private" >
+| < PROTECTED: "protected" >
+| < PUBLIC: "public" >
+| < READONLY: "readonly" >
+| < REF: "ref" >
+| < RETURN: "return" >
+| < SEALED: "sealed" >
+| < SIZEOF: "sizeof" >
+| < STACKALLOC: "stackalloc" >
+| < STATIC: "static" >
+| < SWITCH: "switch" >
+| < THIS: "this" >
+| < THROW: "throw" >
+| < _TRUE: "TRUE" >
+| < TRY: "try" >
+| < TYPEOF: "typeof" >
+| < UNCHECKED: "unchecked" >
+| < UNSAFE: "unsafe" >
+| < USING: "using" >
+| < VIRTUAL: "virtual" >
+| < VOID: "void" >
+| < VOLATILE: "volatile" >
+| < WHILE: "while" >
+
+}
+
+
+
+/************
+ * TIPOS DE VALOR *
+ ************/
+
+TOKEN:
+{
+
+ < BOOL: "bool" >
+| < BYTE: "byte" >
+| < DECIMAL: "decimal" >
+| < DOUBLE: "double" >
+| < INT: "int" >
+| < FLOAT: "float" >
+| < LONG: "long" >
+| < SBYTE: "sbyte" >
+| < SHORT: "short" >
+| < UINT: "uint" >
+| < ULONG: "ulong" >
+| < USHORT: "ushort" >
+}
+
+/************
+ * TIPOS DE REFERENCIA *
+ ************/
+TOKEN:
+{
+
+ < CHAR: "char" >
+| < DELEGATE: "delegate" >
+| < ENUM: "enum" >
+| < STRUCT: "struct" >
+| < OBJECT: "object" >
+| < STRING: "string" >
+}
+
+
+void comp_input() :
+{}
+{
+  term()
+  (
+    term()
+  )*
+}
+
+void term() :
+{Token t;}
+{ 	
+    t = <_TRUE> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+|   t = <_FALSE> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+|   t = <_NULL> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+|   t = <IF> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+}

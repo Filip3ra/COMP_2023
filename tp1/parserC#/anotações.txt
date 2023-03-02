@@ -1,0 +1,12 @@
+> O token não pode ter o mesmo nome que o estado lexico
+	ex: DEFAULT: "DEFAULT" está errado, deveria ser algo tipo _DEFAULT: "DEFAULT"
+
+
+> Aparentemente cada parser tem suas regras pra ler o fluxo de tokens, então no javacc que estamos usando
+a regra é: 
+TOKEN:
+{
+< ABSTRACT: "abstract" >
+| < ELSE: "else" >
+
+}
