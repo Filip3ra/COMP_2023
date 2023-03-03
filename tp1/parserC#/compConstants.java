@@ -127,41 +127,217 @@ public interface compConstants {
   /** RegularExpression Id. */
   int WHILE = 63;
   /** RegularExpression Id. */
-  int BOOL = 64;
+  int ADD = 64;
   /** RegularExpression Id. */
-  int BYTE = 65;
+  int ALIAS = 65;
   /** RegularExpression Id. */
-  int DECIMAL = 66;
+  int ASCENDING = 66;
   /** RegularExpression Id. */
-  int DOUBLE = 67;
+  int ASYNC = 67;
   /** RegularExpression Id. */
-  int INT = 68;
+  int AWAIT = 68;
   /** RegularExpression Id. */
-  int FLOAT = 69;
+  int BY = 69;
   /** RegularExpression Id. */
-  int LONG = 70;
+  int DESCENDING = 70;
   /** RegularExpression Id. */
-  int SBYTE = 71;
+  int DYNAMIC = 71;
   /** RegularExpression Id. */
-  int SHORT = 72;
+  int EQUALS = 72;
   /** RegularExpression Id. */
-  int UINT = 73;
+  int FROM = 73;
   /** RegularExpression Id. */
-  int ULONG = 74;
+  int GET = 74;
   /** RegularExpression Id. */
-  int USHORT = 75;
+  int GLOBAL = 75;
   /** RegularExpression Id. */
-  int CHAR = 76;
+  int GROUP = 76;
   /** RegularExpression Id. */
-  int DELEGATE = 77;
+  int INTO = 77;
   /** RegularExpression Id. */
-  int ENUM = 78;
+  int JOIN = 78;
   /** RegularExpression Id. */
-  int STRUCT = 79;
+  int LET = 79;
   /** RegularExpression Id. */
-  int OBJECT = 80;
+  int NAMEOF = 80;
   /** RegularExpression Id. */
-  int STRING = 81;
+  int ON = 81;
+  /** RegularExpression Id. */
+  int ORDERBY = 82;
+  /** RegularExpression Id. */
+  int PARTIAL = 83;
+  /** RegularExpression Id. */
+  int REMOVE = 84;
+  /** RegularExpression Id. */
+  int SELECT = 85;
+  /** RegularExpression Id. */
+  int SET = 86;
+  /** RegularExpression Id. */
+  int UNMANAGED = 87;
+  /** RegularExpression Id. */
+  int VALUE = 88;
+  /** RegularExpression Id. */
+  int VAR = 89;
+  /** RegularExpression Id. */
+  int WHEN = 90;
+  /** RegularExpression Id. */
+  int WHERE = 91;
+  /** RegularExpression Id. */
+  int YIELD = 92;
+  /** RegularExpression Id. */
+  int BOOL = 93;
+  /** RegularExpression Id. */
+  int BYTE = 94;
+  /** RegularExpression Id. */
+  int DECIMAL = 95;
+  /** RegularExpression Id. */
+  int DOUBLE = 96;
+  /** RegularExpression Id. */
+  int INT = 97;
+  /** RegularExpression Id. */
+  int FLOAT = 98;
+  /** RegularExpression Id. */
+  int LONG = 99;
+  /** RegularExpression Id. */
+  int SBYTE = 100;
+  /** RegularExpression Id. */
+  int SHORT = 101;
+  /** RegularExpression Id. */
+  int UINT = 102;
+  /** RegularExpression Id. */
+  int ULONG = 103;
+  /** RegularExpression Id. */
+  int USHORT = 104;
+  /** RegularExpression Id. */
+  int CHAR = 105;
+  /** RegularExpression Id. */
+  int DELEGATE = 106;
+  /** RegularExpression Id. */
+  int ENUM = 107;
+  /** RegularExpression Id. */
+  int STRUCT = 108;
+  /** RegularExpression Id. */
+  int OBJECT = 109;
+  /** RegularExpression Id. */
+  int STRING = 110;
+  /** RegularExpression Id. */
+  int LBRACE = 111;
+  /** RegularExpression Id. */
+  int RBRACE = 112;
+  /** RegularExpression Id. */
+  int LBRACKET = 113;
+  /** RegularExpression Id. */
+  int RBRACKET = 114;
+  /** RegularExpression Id. */
+  int LPAREN = 115;
+  /** RegularExpression Id. */
+  int RPAREN = 116;
+  /** RegularExpression Id. */
+  int DOT = 117;
+  /** RegularExpression Id. */
+  int COMMA = 118;
+  /** RegularExpression Id. */
+  int COLON = 119;
+  /** RegularExpression Id. */
+  int SEMICOLON = 120;
+  /** RegularExpression Id. */
+  int PLUS = 121;
+  /** RegularExpression Id. */
+  int MINUS = 122;
+  /** RegularExpression Id. */
+  int STAR = 123;
+  /** RegularExpression Id. */
+  int SLASH = 124;
+  /** RegularExpression Id. */
+  int PERCENT = 125;
+  /** RegularExpression Id. */
+  int BIT_AND = 126;
+  /** RegularExpression Id. */
+  int BAR = 127;
+  /** RegularExpression Id. */
+  int HAT = 128;
+  /** RegularExpression Id. */
+  int EXCLAMATION = 129;
+  /** RegularExpression Id. */
+  int TILDE = 130;
+  /** RegularExpression Id. */
+  int EQUAL = 131;
+  /** RegularExpression Id. */
+  int LT = 132;
+  /** RegularExpression Id. */
+  int GT = 133;
+  /** RegularExpression Id. */
+  int INTERROGATION = 134;
+  /** RegularExpression Id. */
+  int DOUBLEINTERROGATION = 135;
+  /** RegularExpression Id. */
+  int DOUBLECOLON = 136;
+  /** RegularExpression Id. */
+  int PLUSPLUS = 137;
+  /** RegularExpression Id. */
+  int MINUSMINUS = 138;
+  /** RegularExpression Id. */
+  int ANDAND = 139;
+  /** RegularExpression Id. */
+  int DOUBLEBAR = 140;
+  /** RegularExpression Id. */
+  int ARROW = 141;
+  /** RegularExpression Id. */
+  int EQUALEQUAL = 142;
+  /** RegularExpression Id. */
+  int EXCLAMATIONASSIGN = 143;
+  /** RegularExpression Id. */
+  int LOE = 144;
+  /** RegularExpression Id. */
+  int GOE = 145;
+  /** RegularExpression Id. */
+  int PLUSASSIGN = 146;
+  /** RegularExpression Id. */
+  int MINUSASSIGN = 147;
+  /** RegularExpression Id. */
+  int STARASSIGN = 148;
+  /** RegularExpression Id. */
+  int SLASHASSIGN = 149;
+  /** RegularExpression Id. */
+  int PERCENTASSIGN = 150;
+  /** RegularExpression Id. */
+  int ANDASSIGN = 151;
+  /** RegularExpression Id. */
+  int BARASSIGN = 152;
+  /** RegularExpression Id. */
+  int HATASSIGN = 153;
+  /** RegularExpression Id. */
+  int LSHIFT = 154;
+  /** RegularExpression Id. */
+  int LSHIFTASSIGNMENT = 155;
+  /** RegularExpression Id. */
+  int BIGARROW = 156;
+  /** RegularExpression Id. */
+  int RSHIFT = 157;
+  /** RegularExpression Id. */
+  int RSHIFTASSIGNMENT = 158;
+  /** RegularExpression Id. */
+  int ID = 159;
+  /** RegularExpression Id. */
+  int LETTER = 160;
+  /** RegularExpression Id. */
+  int DIGIT = 161;
+  /** RegularExpression Id. */
+  int COMMENT_DOUBLE_SLASH = 162;
+  /** RegularExpression Id. */
+  int NUM = 163;
+  /** RegularExpression Id. */
+  int FLOAT_NUM = 164;
+  /** RegularExpression Id. */
+  int EXPONENT = 165;
+  /** RegularExpression Id. */
+  int _STRING = 166;
+  /** RegularExpression Id. */
+  int QUOTEDSTRING = 167;
+  /** RegularExpression Id. */
+  int DOUBLEQUOTEDSTRING = 168;
+  /** RegularExpression Id. */
+  int STRINGCHARACTER = 169;
 
   /** Lexical state. */
   int DEFAULT = 0;
@@ -232,6 +408,35 @@ public interface compConstants {
     "\"void\"",
     "\"volatile\"",
     "\"while\"",
+    "\"add\"",
+    "\"alias\"",
+    "\"ascending\"",
+    "\"async\"",
+    "\"await\"",
+    "\"by\"",
+    "\"descending\"",
+    "\"dynamic\"",
+    "\"equals\"",
+    "\"from\"",
+    "\"get\"",
+    "\"global\"",
+    "\"group\"",
+    "\"into\"",
+    "\"join\"",
+    "\"let\"",
+    "\"nameof\"",
+    "\"on\"",
+    "\"orderby\"",
+    "\"partial\"",
+    "\"remove\"",
+    "\"select\"",
+    "\"set\"",
+    "\"unmanaged\"",
+    "\"value\"",
+    "\"var\"",
+    "\"when\"",
+    "\"where\"",
+    "\"yield\"",
     "\"bool\"",
     "\"byte\"",
     "\"decimal\"",
@@ -250,6 +455,65 @@ public interface compConstants {
     "\"struct\"",
     "\"object\"",
     "\"string\"",
+    "\"{\"",
+    "\"}\"",
+    "\"[\"",
+    "\"]\"",
+    "\"(\"",
+    "\")\"",
+    "\".\"",
+    "\",\"",
+    "\":\"",
+    "\";\"",
+    "\"+\"",
+    "\"-\"",
+    "\"*\"",
+    "\"/\"",
+    "\"%\"",
+    "\"&\"",
+    "\"|\"",
+    "\"^\"",
+    "\"!\"",
+    "\"~\"",
+    "\"=\"",
+    "\"<\"",
+    "\">\"",
+    "\"?\"",
+    "\"??\"",
+    "\"::\"",
+    "\"++\"",
+    "\"--\"",
+    "\"&&\"",
+    "\"||\"",
+    "\"->\"",
+    "\"==\"",
+    "\"!=\"",
+    "\"<=\"",
+    "\">=\"",
+    "\"+=\"",
+    "\"-=\"",
+    "\"*=\"",
+    "\"/=\"",
+    "\"%=\"",
+    "\"&=\"",
+    "\"|=\"",
+    "\"^=\"",
+    "\"<<\"",
+    "\"<<=\"",
+    "\"=>\"",
+    "\">>\"",
+    "\">>=\"",
+    "<ID>",
+    "<LETTER>",
+    "<DIGIT>",
+    "<COMMENT_DOUBLE_SLASH>",
+    "<NUM>",
+    "<FLOAT_NUM>",
+    "<EXPONENT>",
+    "<_STRING>",
+    "<QUOTEDSTRING>",
+    "<DOUBLEQUOTEDSTRING>",
+    "<STRINGCHARACTER>",
   };
 
 }
