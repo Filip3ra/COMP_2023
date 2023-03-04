@@ -13,9 +13,9 @@ PARSER_END(comp)
 SKIP:
 {
   " "
-| "\t"
-| "\n"
-| "\r"
+  | "\t"
+  | "\n"
+  | "\r"
 }
 
 
@@ -24,64 +24,64 @@ SKIP:
 TOKEN:
 {
   < ABSTRACT: "abstract" >
-| < AS: "as" >
-| < BASE: "base" >
-| < BREAK: "break" >
-| < CASE: "case" >
-| < CATCH: "catch" >
-| < CHECKED: "checked" >
-| < CLASS: "class" >
-| < CONST: "const" >
-| < CONTINUE: "continue" >
-| < _DEFAULT: "DEFAULT" >
-| < DO: "do" >
-| < ELSE: "else" >
-| < EVENT: "event" >
-| < EXPLICIT: "explicit" >
-| < EXTERN: "extern" >
-| < _FALSE: "FALSE" >
-| < FINALLY: "finally" >
-| < FIXED: "fixed" >
-| < FOR: "for" >
-| < FOREACH: "foreach" >
-| < GOTO: "goto" >
-| < IF: "if" >
-| < IMPLICIT: "implicit" >
-| < IN: "in" >
-| < INTERFACE: "interface" >
-| < INTERNAL: "internal" >
-| < IS: "is" >
-| < LOCK: "lock" >
-| < NAMESPACE: "namespace" >
-| < NEW: "new" >
-| < _NULL: "NULL" >
-| < OPERATOR: "operator" >
-| < OUT: "out" >
-| < OVERRIDE: "override" >
-| < PARAMS: "params" >
-| < PRIVATE: "private" >
-| < PROTECTED: "protected" >
-| < PUBLIC: "public" >
-| < READONLY: "readonly" >
-| < REF: "ref" >
-| < RETURN: "return" >
-| < SEALED: "sealed" >
-| < SIZEOF: "sizeof" >
-| < STACKALLOC: "stackalloc" >
-| < STATIC: "static" >
-| < SWITCH: "switch" >
-| < THIS: "this" >
-| < THROW: "throw" >
-| < _TRUE: "TRUE" >
-| < TRY: "try" >
-| < TYPEOF: "typeof" >
-| < UNCHECKED: "unchecked" >
-| < UNSAFE: "unsafe" >
-| < USING: "using" >
-| < VIRTUAL: "virtual" >
-| < VOID: "void" >
-| < VOLATILE: "volatile" >
-| < WHILE: "while" >
+  | < AS: "as" >
+  | < BASE: "base" >
+  | < BREAK: "break" >
+  | < CASE: "case" >
+  | < CATCH: "catch" >
+  | < CHECKED: "checked" >
+  | < CLASS: "class" >
+  | < CONST: "const" >
+  | < CONTINUE: "continue" >
+  | < _DEFAULT: "DEFAULT" >
+  | < DO: "do" >
+  | < ELSE: "else" >
+  | < EVENT: "event" >
+  | < EXPLICIT: "explicit" >
+  | < EXTERN: "extern" >
+  | < _FALSE: "FALSE" >
+  | < FINALLY: "finally" >
+  | < FIXED: "fixed" >
+  | < FOR: "for" >
+  | < FOREACH: "foreach" >
+  | < GOTO: "goto" >
+  | < IF: "if" >
+  | < IMPLICIT: "implicit" >
+  | < IN: "in" >
+  | < INTERFACE: "interface" >
+  | < INTERNAL: "internal" >
+  | < IS: "is" >
+  | < LOCK: "lock" >
+  | < NAMESPACE: "namespace" >
+  | < NEW: "new" >
+  | < _NULL: "NULL" >
+  | < OPERATOR: "operator" >
+  | < OUT: "out" >
+  | < OVERRIDE: "override" >
+  | < PARAMS: "params" >
+  | < PRIVATE: "private" >
+  | < PROTECTED: "protected" >
+  | < PUBLIC: "public" >
+  | < READONLY: "readonly" >
+  | < REF: "ref" >
+  | < RETURN: "return" >
+  | < SEALED: "sealed" >
+  | < SIZEOF: "sizeof" >
+  | < STACKALLOC: "stackalloc" >
+  | < STATIC: "static" >
+  | < SWITCH: "switch" >
+  | < THIS: "this" >
+  | < THROW: "throw" >
+  | < _TRUE: "TRUE" >
+  | < TRY: "try" >
+  | < TYPEOF: "typeof" >
+  | < UNCHECKED: "unchecked" >
+  | < UNSAFE: "unsafe" >
+  | < USING: "using" >
+  | < VIRTUAL: "virtual" >
+  | < VOID: "void" >
+  | < VOLATILE: "volatile" >
+  | < WHILE: "while" >
 }
 
 
@@ -90,34 +90,34 @@ TOKEN:
 TOKEN:
 {
   < ADD: "add" >
-| < ALIAS: "alias" >
-| < ASCENDING: "ascending" >
-| < ASYNC: "async" >
-| < AWAIT: "await" >
-| < BY: "by" >
-| < DESCENDING: "descending" >
-| < DYNAMIC: "dynamic" >
-| < EQUALS: "equals" >
-| < FROM: "from" >
-| < GET: "get" >
-| < GLOBAL: "global" >
-| < GROUP: "group" >
-| < INTO: "into" >
-| < JOIN: "join" >
-| < LET: "let" >
-| < NAMEOF: "nameof" >
-| < ON: "on" >
-| < ORDERBY: "orderby" >
-| < PARTIAL: "partial" >
-| < REMOVE: "remove" >
-| < SELECT: "select" >
-| < SET: "set" >
-| < UNMANAGED: "unmanaged" >
-| < VALUE: "value" >
-| < VAR: "var" >
-| < WHEN: "when" >
-| < WHERE: "where" >
-| < YIELD: "yield" >
+  | < ALIAS: "alias" >
+  | < ASCENDING: "ascending" >
+  | < ASYNC: "async" >
+  | < AWAIT: "await" >
+  | < BY: "by" >
+  | < DESCENDING: "descending" >
+  | < DYNAMIC: "dynamic" >
+  | < EQUALS: "equals" >
+  | < FROM: "from" >
+  | < GET: "get" >
+  | < GLOBAL: "global" >
+  | < GROUP: "group" >
+  | < INTO: "into" >
+  | < JOIN: "join" >
+  | < LET: "let" >
+  | < NAMEOF: "nameof" >
+  | < ON: "on" >
+  | < ORDERBY: "orderby" >
+  | < PARTIAL: "partial" >
+  | < REMOVE: "remove" >
+  | < SELECT: "select" >
+  | < SET: "set" >
+  | < UNMANAGED: "unmanaged" >
+  | < VALUE: "value" >
+  | < VAR: "var" >
+  | < WHEN: "when" >
+  | < WHERE: "where" >
+  | < YIELD: "yield" >
 }
 
 
@@ -125,18 +125,18 @@ TOKEN:
 
 TOKEN:
 {
- < BOOL: "bool" >
-| < BYTE: "byte" >
-| < DECIMAL: "decimal" >
-| < DOUBLE: "double" >
-| < INT: "int" >
-| < FLOAT: "float" >
-| < LONG: "long" >
-| < SBYTE: "sbyte" >
-| < SHORT: "short" >
-| < UINT: "uint" >
-| < ULONG: "ulong" >
-| < USHORT: "ushort" >
+  < BOOL: "bool" >
+  | < BYTE: "byte" >
+  | < DECIMAL: "decimal" >
+  | < DOUBLE: "double" >
+  | < INT: "int" >
+  | < FLOAT: "float" >
+  | < LONG: "long" >
+  | < SBYTE: "sbyte" >
+  | < SHORT: "short" >
+  | < UINT: "uint" >
+  | < ULONG: "ulong" >
+  | < USHORT: "ushort" >
 }
 
 
@@ -144,12 +144,12 @@ TOKEN:
 
 TOKEN:
 {
- < CHAR: "char" >
-| < DELEGATE: "delegate" >
-| < ENUM: "enum" >
-| < STRUCT: "struct" >
-| < OBJECT: "object" >
-| < STRING: "string" >
+  < CHAR: "char" >
+  | < DELEGATE: "delegate" >
+  | < ENUM: "enum" >
+  | < STRUCT: "struct" >
+  | < OBJECT: "object" >
+  | < STRING: "string" >
 }
 
 
@@ -158,126 +158,232 @@ TOKEN:
 TOKEN:
 {
   < LBRACE: "{" >
-| < RBRACE: "}" >
-| < LBRACKET: "[" >
-| < RBRACKET: "]" >
-| < LPAREN: "(" >
-| < RPAREN: ")" >
-| < DOT: "." >
-| < COMMA: "," >
-| < COLON: ":" >
-| < SEMICOLON: ";" >
-| < PLUS: "+" >
-| < MINUS: "-" >
-| < STAR: "*" >
-| < SLASH: "/" >
-| < PERCENT: "%" >
-| < BIT_AND: "&" >
-| < BAR: "|" >
-| < HAT: "^" >
-| < EXCLAMATION: "!" >
-| < TILDE: "~" >
-| < EQUAL: "=" >
-| < LT: "<" >
-| < GT: ">" >
-| < INTERROGATION: "?" >
-| < DOUBLEINTERROGATION: "??" >
-| < DOUBLECOLON: "::" >
-| < PLUSPLUS: "++" >
-| < MINUSMINUS: "--" >
-| < ANDAND: "&&" >
-| < DOUBLEBAR: "||" >
-| < ARROW: "->" >
-| < EQUALEQUAL: "==" >
-| < EXCLAMATIONASSIGN: "!=" >
-| < LOE: "<=" >
-| < GOE: ">=" >
-| < PLUSASSIGN: "+=" >
-| < MINUSASSIGN: "-=" >
-| < STARASSIGN: "*=" >
-| < SLASHASSIGN: "/=" >
-| < PERCENTASSIGN: "%=" >
-| < ANDASSIGN: "&=" >
-| < BARASSIGN: "|=" >
-| < HATASSIGN: "^=" >
-| < LSHIFT: "<<" >
-| < LSHIFTASSIGNMENT: "<<=" >
-| < BIGARROW: "=>" >
-| < RSHIFT: ">>" >
-| < RSHIFTASSIGNMENT: ">>=" >
+  | < RBRACE: "}" >
+  | < LBRACKET: "[" >
+  | < RBRACKET: "]" >
+  | < LPAREN: "(" >
+  | < RPAREN: ")" >
+  | < DOT: "." >
+  | < COMMA: "," >
+  | < COLON: ":" >
+  | < SEMICOLON: ";" >
+  | < PLUS: "+" >
+  | < MINUS: "-" >
+  | < STAR: "*" >
+  | < SLASH: "/" >
+  | < PERCENT: "%" >
+  | < BIT_AND: "&" >
+  | < BAR: "|" >
+  | < HAT: "^" >
+  | < EXCLAMATION: "!" >
+  | < TILDE: "~" >
+  | < EQUAL: "=" >
+  | < LT: "<" >
+  | < GT: ">" >
+  | < INTERROGATION: "?" >
+  | < DOUBLEINTERROGATION: "??" >
+  | < DOUBLECOLON: "::" >
+  | < PLUSPLUS: "++" >
+  | < MINUSMINUS: "--" >
+  | < ANDAND: "&&" >
+  | < DOUBLEBAR: "||" >
+  | < ARROW: "->" >
+  | < EQUALEQUAL: "==" >
+  | < EXCLAMATIONASSIGN: "!=" >
+  | < LOE: "<=" >
+  | < GOE: ">=" >
+  | < PLUSASSIGN: "+=" >
+  | < MINUSASSIGN: "-=" >
+  | < STARASSIGN: "*=" >
+  | < SLASHASSIGN: "/=" >
+  | < PERCENTASSIGN: "%=" >
+  | < ANDASSIGN: "&=" >
+  | < BARASSIGN: "|=" >
+  | < HATASSIGN: "^=" >
+  | < LSHIFT: "<<" >
+  | < LSHIFTASSIGNMENT: "<<=" >
+  | < BIGARROW: "=>" >
+  | < RSHIFT: ">>" >
+  | < RSHIFTASSIGNMENT: ">>=" >
 }
 
 
-// < COMMENT_DOUBLE_SLASH: ["//"] (~["\n","\r"])* ("\r"? "\n"|"\r"|"\r\n")? >
+/**** COMMENTS ****/
 
-/*********************************************************************/
-
-TOKEN :
-{
-  < ID: <LETTER> (<LETTER>|<DIGIT>)* >
-|
-  < #LETTER:
-      ["A"-"Z","_","a"-"z"]
-  >
-|
-  < #DIGIT:
-      ["0"-"9"]
-  >
-}
-
-//não funciona ainda
 TOKEN:
 {
-  //< COMMENT_DOUBLE_SLASH: ["/"] (~["\n","\r"])* >
+    < SINGLE_LINE_COMMENT: 
+      "//" (~["\n","\r"])* 
+    >
+  |
+    < DELIMITED_COMMENT: 
+      "/*" (~["*"] | ("*" ~["/"]))* "*" ("/")? 
+    >
 }
 
+/**** UNICODE SCAPE SEQUENCES ****/
 
-TOKEN :
+TOKEN:
 {
-  < NUM: 
-        ["1"-"9"] (["0"-"9"])* 
-      | ["0"]
-  >
-|
-  < FLOAT_NUM:
-         (["0"-"9"])+ "." (["0"-"9"])* (<EXPONENT>)?
-      | "." (["0"-"9"])+ (<EXPONENT>)?
-      | (["0"-"9"])+ <EXPONENT>
-      | (["0"-"9"])+ (<EXPONENT>)?
-  >
-|  
-  < #EXPONENT: 
-      ["e","E"] (["+","-"])? (["0"-"9"])+
-  >
-|
-  < _STRING:
-	(<QUOTEDSTRING> | <DOUBLEQUOTEDSTRING>)+
->
-|
-  < #QUOTEDSTRING:
-	["\'"] (<STRINGCHARACTER>)* ["\'"]
->
-|
-  < #DOUBLEQUOTEDSTRING:
-	["\""] (<STRINGCHARACTER>)* ["\""]
->
-|
-  < #STRINGCHARACTER:
-      (   (~["\"","\\","\n","\r"])
-        | ("\\"
-            ( ["n","t","b","r","f","\\","'","\""]
-            | ["0"-"7"] ( ["0"-"7"] )?
-            | ["0"-"3"] ["0"-"7"] ["0"-"7"]
-            )
-          )
-        |
-	        ["\""]
-      )*
-  >
-
+    <UNICODE_ESCAPE:
+      (["'"])? "\\" (["u"] | ["U"])  (<UNI_HEX_DIGIT>){4,8} (["'"])?
+    >
+  |
+    <#UNI_HEX_DIGIT: 
+      ["0"-"9", "a"-"f", "A"-"F"]
+    >
 }
+
+
 
 /*********************************************************************/
+/* Para os tipos de valores a abordagem inicial foi algo mais 
+   simples e que pudesse identificar os tipos mais básicos, que
+   são números, ponto flutuantes, notação ciêntifica, string, etc.
+*/
+
+   
+
+/**** TYPE VALUES ****/
+/*
+TOKEN :
+{
+
+    < NUM: 
+          ["1"-"9"] (["0"-"9"])* 
+        | ["0"]
+    >
+  |
+ 
+    < FLOAT_NUM:
+          (["0"-"9"])+ "." (["0"-"9"])* (<EXPONENT>)?
+        | "." (["0"-"9"])+ (<EXPONENT>)?
+        | (["0"-"9"])+ <EXPONENT>
+        | (["0"-"9"])+ (<EXPONENT>)?
+    >
+  |  
+    < #EXPONENT: 
+        ["e","E"] (["+","-"])? (["0"-"9"])+
+    >
+  |
+    < _STRING:
+    (<DOUBLEQUOTEDSTRING>)+
+  >
+  |
+    < QUOTEDSTRING:
+    ["\'"] (<CHARACTER>)* ["\'"]
+  >
+  |
+    < #DOUBLEQUOTEDSTRING:
+    ["\""] (<STRINGCHARACTER>)* ["\""]
+  >
+  |
+    < #STRINGCHARACTER:
+        (   (~["\"","\\","\n","\r"])
+          | ("\\"
+              ( ["n","t","b","r","f","\\","'","\""]
+              | ["0"-"7"] ( ["0"-"7"] )?
+              | ["0"-"3"] ["0"-"7"] ["0"-"7"]
+              )
+            )
+          |
+            ["\""]
+        )*
+    >
+  |
+    < #CHARACTER:
+        (~["'", ",", "\\", "\n", "\r"])
+        | ("\\" (
+              ["'", "\\", "n", "t", "r", "0"]
+              | ["0"-"7"] ( ["0"-"7"] )?
+              | ["0"-"3"] ["0"-"7"] ["0"-"7"]
+            )
+        )
+    >
+}
+
+ */
+
+
+
+
+
+/**** LITERALS ****/
+
+// INTEGER LITERAL
+TOKEN:
+{
+	<INTEGER_LITERAL: 
+		(<DECIMAL_INTEGER_LITERAL> | <HEXADECIMAL_INTEGER_LITERAL> | <BINARY_INTEGER_LITERAL>)
+	>
+	| 
+	<#DECIMAL_INTEGER_LITERAL: 
+		<DECIMAL_DIGIT> (<DECORATED_DECIMAL_DIGIT>)* (<INTEGER_TYPE_SUFFIX>)?
+	>
+	| 
+	<#DECORATED_DECIMAL_DIGIT: 
+		("_")* <DECIMAL_DIGIT> 
+	>
+	| 
+	<#DECIMAL_DIGIT: 
+		["0"-"9"]>
+	| 
+	<#INTEGER_TYPE_SUFFIX: 
+		
+		["U", "u", "L", "l"] | 
+    ("U" ["L","l"]) |
+    ("u" ["L","l"]) |
+    ("L" ["U","u"]) |
+    ("l" ["U","u"]) 
+	>
+	| 
+	<#HEXADECIMAL_INTEGER_LITERAL: 
+		("0" ["x","X"]) (<DECORATED_HEX_DIGIT>)+ (<INTEGER_TYPE_SUFFIX>)? 
+	>
+	| 
+	<#DECORATED_HEX_DIGIT: 
+		("_")* <HEX_DIGIT> 
+	>
+	| 
+	<#HEX_DIGIT: 
+		["0"-"9","A"-"F","a"-"f"]
+	>
+	| 
+	<#BINARY_INTEGER_LITERAL: 
+		("0" ["b","B"]) (<DECORATED_BINARY_DIGIT>)+ (<INTEGER_TYPE_SUFFIX>)? 
+	>
+	| 
+	<#DECORATED_BINARY_DIGIT: 
+		("_")* <BINARY_DIGIT> 
+	>
+	| 
+	<#BINARY_DIGIT: 
+		["0", "1"]
+	>
+}
+
+
+/**** IDENTIFIERS ****/
+
+TOKEN:
+{
+    < ID: <LETTER> (<LETTER>|<DIGIT>)* >
+  |
+    < #LETTER:
+        ["A"-"Z","_","a"-"z"]
+    >
+  |
+    < #DIGIT:
+        ["0"-"9"]
+    >
+}
+
+
+/*********************************************************************/
+
+
+
+
 
 void comp_input() :
 {}
@@ -292,168 +398,176 @@ void term() :
 {Token t;}
 {
   
-    t = <LBRACE> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <RBRACE> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <LBRACKET> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <RBRACKET> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <LPAREN> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <RPAREN> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <DOT> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <COMMA> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <COLON> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <SEMICOLON> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <PLUS> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <MINUS> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <STAR> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <SLASH> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <PERCENT> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <BIT_AND> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <BAR> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <HAT> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <EXCLAMATION> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <TILDE> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <EQUAL> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <LT> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <GT> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <INTERROGATION> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <DOUBLEINTERROGATION> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <DOUBLECOLON> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <PLUSPLUS> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <MINUSMINUS> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <ANDAND> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <DOUBLEBAR> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <ARROW> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <EQUALEQUAL> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <EXCLAMATIONASSIGN> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <LOE> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <GOE> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <PLUSASSIGN> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <MINUSASSIGN> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <STARASSIGN> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <SLASHASSIGN> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <PERCENTASSIGN> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <ANDASSIGN> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <BARASSIGN> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <HATASSIGN> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <LSHIFT> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <LSHIFTASSIGNMENT> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <BIGARROW> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <RSHIFT> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
-|   t = <RSHIFTASSIGNMENT> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+      t = <LBRACE> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <RBRACE> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <LBRACKET> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <RBRACKET> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <LPAREN> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <RPAREN> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <DOT> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <COMMA> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <COLON> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <SEMICOLON> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <PLUS> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <MINUS> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <STAR> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <SLASH> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <PERCENT> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <BIT_AND> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <BAR> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <HAT> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <EXCLAMATION> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <TILDE> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <EQUAL> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <LT> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <GT> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <INTERROGATION> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <DOUBLEINTERROGATION> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <DOUBLECOLON> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <PLUSPLUS> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <MINUSMINUS> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <ANDAND> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <DOUBLEBAR> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <ARROW> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <EQUALEQUAL> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <EXCLAMATIONASSIGN> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <LOE> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <GOE> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <PLUSASSIGN> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <MINUSASSIGN> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <STARASSIGN> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <SLASHASSIGN> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <PERCENTASSIGN> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <ANDASSIGN> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <BARASSIGN> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <HATASSIGN> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <LSHIFT> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <LSHIFTASSIGNMENT> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <BIGARROW> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <RSHIFT> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
+  |   t = <RSHIFTASSIGNMENT> {System.out.println("OPERADORES E PONTUADORES: " + t.image);}
 
-|   t = <CHAR> {System.out.println("VALORES DE REFERENCIA: " + t.image);}
-|   t = <DELEGATE> {System.out.println("VALORES DE REFERENCIA: " + t.image);}
-|   t = <ENUM> {System.out.println("VALORES DE REFERENCIA: " + t.image);}
-|   t = <STRUCT> {System.out.println("VALORES DE REFERENCIA: " + t.image);}
-|   t = <OBJECT> {System.out.println("VALORES DE REFERENCIA: " + t.image);}
-|   t = <STRING> {System.out.println("VALORES DE REFERENCIA: " + t.image);}
+  |   t = <CHAR> {System.out.println("VALORES DE REFERENCIA: " + t.image);}
+  |   t = <DELEGATE> {System.out.println("VALORES DE REFERENCIA: " + t.image);}
+  |   t = <ENUM> {System.out.println("VALORES DE REFERENCIA: " + t.image);}
+  |   t = <STRUCT> {System.out.println("VALORES DE REFERENCIA: " + t.image);}
+  |   t = <OBJECT> {System.out.println("VALORES DE REFERENCIA: " + t.image);}
+  |   t = <STRING> {System.out.println("VALORES DE REFERENCIA: " + t.image);}
 
-|   t = <BOOL> {System.out.println("VALORES DE TIPOS: " + t.image);}
-|   t = <BYTE> {System.out.println("VALORES DE TIPOS: " + t.image);}
-|   t = <DECIMAL> {System.out.println("VALORES DE TIPOS: " + t.image);}
-|   t = <DOUBLE> {System.out.println("VALORES DE TIPOS: " + t.image);}
-|   t = <INT> {System.out.println("VALORES DE TIPOS: " + t.image);}
-|   t = <FLOAT> {System.out.println("VALORES DE TIPOS: " + t.image);}
-|   t = <LONG> {System.out.println("VALORES DE TIPOS: " + t.image);}
-|   t = <SBYTE> {System.out.println("VALORES DE TIPOS: " + t.image);}
-|   t = <SHORT> {System.out.println("VALORES DE TIPOS: " + t.image);}
-|   t = <UINT> {System.out.println("VALORES DE TIPOS: " + t.image);}
-|   t = <ULONG> {System.out.println("VALORES DE TIPOS: " + t.image);}
-|   t = <USHORT> {System.out.println("VALORES DE TIPOS: " + t.image);}
+  |   t = <BOOL> {System.out.println("VALORES DE TIPOS: " + t.image);}
+  |   t = <BYTE> {System.out.println("VALORES DE TIPOS: " + t.image);}
+  |   t = <DECIMAL> {System.out.println("VALORES DE TIPOS: " + t.image);}
+  |   t = <DOUBLE> {System.out.println("VALORES DE TIPOS: " + t.image);}
+  |   t = <INT> {System.out.println("VALORES DE TIPOS: " + t.image);}
+  |   t = <FLOAT> {System.out.println("VALORES DE TIPOS: " + t.image);}
+  |   t = <LONG> {System.out.println("VALORES DE TIPOS: " + t.image);}
+  |   t = <SBYTE> {System.out.println("VALORES DE TIPOS: " + t.image);}
+  |   t = <SHORT> {System.out.println("VALORES DE TIPOS: " + t.image);}
+  |   t = <UINT> {System.out.println("VALORES DE TIPOS: " + t.image);}
+  |   t = <ULONG> {System.out.println("VALORES DE TIPOS: " + t.image);}
+  |   t = <USHORT> {System.out.println("VALORES DE TIPOS: " + t.image);}
 
-|   t = <ADD> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
-|   t = <ALIAS> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
-|   t = <ASCENDING> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
-|   t = <ASYNC> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
-|   t = <AWAIT> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
-|   t = <BY> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
-|   t = <DESCENDING> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
-|   t = <DYNAMIC> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
-|   t = <EQUALS> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
-|   t = <FROM> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
-|   t = <GET> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
-|   t = <GLOBAL> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
-|   t = <GROUP> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
-|   t = <INTO> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
-|   t = <JOIN> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
-|   t = <LET> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
-|   t = <NAMEOF> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
-|   t = <ON> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
-|   t = <ORDERBY> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
-|   t = <PARTIAL> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
-|   t = <REMOVE> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
-|   t = <SELECT> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
-|   t = <SET> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
-|   t = <UNMANAGED> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
-|   t = <VALUE> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
-|   t = <VAR> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
-|   t = <WHEN> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
-|   t = <WHERE> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
-|   t = <YIELD> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
+  |   t = <ADD> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
+  |   t = <ALIAS> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
+  |   t = <ASCENDING> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
+  |   t = <ASYNC> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
+  |   t = <AWAIT> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
+  |   t = <BY> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
+  |   t = <DESCENDING> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
+  |   t = <DYNAMIC> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
+  |   t = <EQUALS> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
+  |   t = <FROM> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
+  |   t = <GET> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
+  |   t = <GLOBAL> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
+  |   t = <GROUP> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
+  |   t = <INTO> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
+  |   t = <JOIN> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
+  |   t = <LET> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
+  |   t = <NAMEOF> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
+  |   t = <ON> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
+  |   t = <ORDERBY> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
+  |   t = <PARTIAL> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
+  |   t = <REMOVE> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
+  |   t = <SELECT> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
+  |   t = <SET> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
+  |   t = <UNMANAGED> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
+  |   t = <VALUE> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
+  |   t = <VAR> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
+  |   t = <WHEN> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
+  |   t = <WHERE> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
+  |   t = <YIELD> {System.out.println("PALAVRA CONTEXTUAL: " + t.image);}
 
-|   t = <ABSTRACT> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <AS> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <BASE> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <BREAK> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <CASE> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <CATCH> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <CHECKED> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <CLASS> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <CONST> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <CONTINUE> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <_DEFAULT> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <DO> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <ELSE> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <EVENT> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <EXPLICIT> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <EXTERN> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <_FALSE> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <FINALLY> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <FIXED> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <FOR> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <FOREACH> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <GOTO> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <IF> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <IMPLICIT> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <IN> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <INTERFACE> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <INTERNAL> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <IS> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <LOCK> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <NAMESPACE> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <NEW> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <_NULL> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <OPERATOR> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <OUT> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <OVERRIDE> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <PARAMS> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <PRIVATE> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <PROTECTED> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <PUBLIC> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <READONLY> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <REF> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <RETURN> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <SEALED> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <SIZEOF> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <STACKALLOC> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <STATIC> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <SWITCH> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <THIS> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <THROW> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <_TRUE> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <TRY> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <TYPEOF> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <UNCHECKED> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <UNSAFE> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <USING> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <VIRTUAL> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <VOID> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <VOLATILE> {System.out.println("PALAVRA RESERVADA: " + t.image);}
-|   t = <WHILE> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <ABSTRACT> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <AS> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <BASE> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <BREAK> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <CASE> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <CATCH> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <CHECKED> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <CLASS> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <CONST> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <CONTINUE> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <_DEFAULT> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <DO> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <ELSE> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <EVENT> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <EXPLICIT> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <EXTERN> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <_FALSE> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <FINALLY> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <FIXED> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <FOR> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <FOREACH> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <GOTO> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <IF> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <IMPLICIT> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <IN> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <INTERFACE> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <INTERNAL> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <IS> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <LOCK> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <NAMESPACE> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <NEW> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <_NULL> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <OPERATOR> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <OUT> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <OVERRIDE> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <PARAMS> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <PRIVATE> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <PROTECTED> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <PUBLIC> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <READONLY> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <REF> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <RETURN> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <SEALED> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <SIZEOF> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <STACKALLOC> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <STATIC> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <SWITCH> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <THIS> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <THROW> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <_TRUE> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <TRY> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <TYPEOF> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <UNCHECKED> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <UNSAFE> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <USING> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <VIRTUAL> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <VOID> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <VOLATILE> {System.out.println("PALAVRA RESERVADA: " + t.image);}
+  |   t = <WHILE> {System.out.println("PALAVRA RESERVADA: " + t.image);}
 
-|   t = <ID> {System.out.println("ID " + t.image);}
-|   t = <NUM> {System.out.println("NUM " + t.image);}
-|   t = <FLOAT_NUM> {System.out.println("FLOAT_NUM " + t.image);}
-|   t = <_STRING> {System.out.println("STRING " + t.image);}
 
+|   t = <INTEGER_LITERAL> {System.out.println("INTEGER_LITERAL: " + t.image);}
+
+|   t = <UNICODE_ESCAPE> {System.out.println("UNICODE: " + t.image);}
+
+|   t = <SINGLE_LINE_COMMENT> {System.out.println("COMENTARIO LINHA: " + t.image);}
+|   t = <DELIMITED_COMMENT> {System.out.println("COMENTARIO DELIMITADO: " + t.image);}
+
+|   t = <ID> {System.out.println("ID: " + t.image);}
+//|   t = <NUM> {System.out.println("NUM: " + t.image);}
+//|   t = <FLOAT_NUM> {System.out.println("FLOAT_NUM: " + t.image);}
+//|   t = <_STRING> {System.out.println("STRING: " + t.image);}
+//|   t = <QUOTEDSTRING> {System.out.println("CHARACTER: " + t.image);}
 }

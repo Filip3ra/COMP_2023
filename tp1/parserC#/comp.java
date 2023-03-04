@@ -166,10 +166,11 @@ public class comp implements compConstants {
       case BIGARROW:
       case RSHIFT:
       case RSHIFTASSIGNMENT:
+      case SINGLE_LINE_COMMENT:
+      case DELIMITED_COMMENT:
+      case UNICODE_ESCAPE:
+      case INTEGER_LITERAL:
       case ID:
-      case NUM:
-      case FLOAT_NUM:
-      case _STRING:
         ;
         break;
       default:
@@ -185,635 +186,639 @@ public class comp implements compConstants {
     switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
     case LBRACE:
       t = jj_consume_token(LBRACE);
-                  System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                    System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case RBRACE:
       t = jj_consume_token(RBRACE);
-                  System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                    System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case LBRACKET:
       t = jj_consume_token(LBRACKET);
-                    System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                      System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case RBRACKET:
       t = jj_consume_token(RBRACKET);
-                    System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                      System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case LPAREN:
       t = jj_consume_token(LPAREN);
-                  System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                    System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case RPAREN:
       t = jj_consume_token(RPAREN);
-                  System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                    System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case DOT:
       t = jj_consume_token(DOT);
-               System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                 System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case COMMA:
       t = jj_consume_token(COMMA);
-                 System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                   System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case COLON:
       t = jj_consume_token(COLON);
-                 System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                   System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case SEMICOLON:
       t = jj_consume_token(SEMICOLON);
-                     System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                       System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case PLUS:
       t = jj_consume_token(PLUS);
-                System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                  System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case MINUS:
       t = jj_consume_token(MINUS);
-                 System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                   System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case STAR:
       t = jj_consume_token(STAR);
-                System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                  System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case SLASH:
       t = jj_consume_token(SLASH);
-                 System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                   System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case PERCENT:
       t = jj_consume_token(PERCENT);
-                   System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                     System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case BIT_AND:
       t = jj_consume_token(BIT_AND);
-                   System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                     System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case BAR:
       t = jj_consume_token(BAR);
-               System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                 System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case HAT:
       t = jj_consume_token(HAT);
-               System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                 System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case EXCLAMATION:
       t = jj_consume_token(EXCLAMATION);
-                       System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                         System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case TILDE:
       t = jj_consume_token(TILDE);
-                 System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                   System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case EQUAL:
       t = jj_consume_token(EQUAL);
-                 System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                   System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case LT:
       t = jj_consume_token(LT);
-              System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case GT:
       t = jj_consume_token(GT);
-              System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case INTERROGATION:
       t = jj_consume_token(INTERROGATION);
-                         System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                           System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case DOUBLEINTERROGATION:
       t = jj_consume_token(DOUBLEINTERROGATION);
-                               System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                                 System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case DOUBLECOLON:
       t = jj_consume_token(DOUBLECOLON);
-                       System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                         System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case PLUSPLUS:
       t = jj_consume_token(PLUSPLUS);
-                    System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                      System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case MINUSMINUS:
       t = jj_consume_token(MINUSMINUS);
-                      System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                        System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case ANDAND:
       t = jj_consume_token(ANDAND);
-                  System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                    System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case DOUBLEBAR:
       t = jj_consume_token(DOUBLEBAR);
-                     System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                       System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case ARROW:
       t = jj_consume_token(ARROW);
-                 System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                   System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case EQUALEQUAL:
       t = jj_consume_token(EQUALEQUAL);
-                      System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                        System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case EXCLAMATIONASSIGN:
       t = jj_consume_token(EXCLAMATIONASSIGN);
-                             System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                               System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case LOE:
       t = jj_consume_token(LOE);
-               System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                 System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case GOE:
       t = jj_consume_token(GOE);
-               System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                 System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case PLUSASSIGN:
       t = jj_consume_token(PLUSASSIGN);
-                      System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                        System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case MINUSASSIGN:
       t = jj_consume_token(MINUSASSIGN);
-                       System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                         System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case STARASSIGN:
       t = jj_consume_token(STARASSIGN);
-                      System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                        System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case SLASHASSIGN:
       t = jj_consume_token(SLASHASSIGN);
-                       System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                         System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case PERCENTASSIGN:
       t = jj_consume_token(PERCENTASSIGN);
-                         System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                           System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case ANDASSIGN:
       t = jj_consume_token(ANDASSIGN);
-                     System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                       System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case BARASSIGN:
       t = jj_consume_token(BARASSIGN);
-                     System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                       System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case HATASSIGN:
       t = jj_consume_token(HATASSIGN);
-                     System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                       System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case LSHIFT:
       t = jj_consume_token(LSHIFT);
-                  System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                    System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case LSHIFTASSIGNMENT:
       t = jj_consume_token(LSHIFTASSIGNMENT);
-                            System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                              System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case BIGARROW:
       t = jj_consume_token(BIGARROW);
-                    System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                      System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case RSHIFT:
       t = jj_consume_token(RSHIFT);
-                  System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                    System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case RSHIFTASSIGNMENT:
       t = jj_consume_token(RSHIFTASSIGNMENT);
-                            System.out.println("OPERADORES E PONTUADORES: " + t.image);
+                              System.out.println("OPERADORES E PONTUADORES: " + t.image);
       break;
     case CHAR:
       t = jj_consume_token(CHAR);
-                System.out.println("VALORES DE REFERENCIA: " + t.image);
+                  System.out.println("VALORES DE REFERENCIA: " + t.image);
       break;
     case DELEGATE:
       t = jj_consume_token(DELEGATE);
-                    System.out.println("VALORES DE REFERENCIA: " + t.image);
+                      System.out.println("VALORES DE REFERENCIA: " + t.image);
       break;
     case ENUM:
       t = jj_consume_token(ENUM);
-                System.out.println("VALORES DE REFERENCIA: " + t.image);
+                  System.out.println("VALORES DE REFERENCIA: " + t.image);
       break;
     case STRUCT:
       t = jj_consume_token(STRUCT);
-                  System.out.println("VALORES DE REFERENCIA: " + t.image);
+                    System.out.println("VALORES DE REFERENCIA: " + t.image);
       break;
     case OBJECT:
       t = jj_consume_token(OBJECT);
-                  System.out.println("VALORES DE REFERENCIA: " + t.image);
+                    System.out.println("VALORES DE REFERENCIA: " + t.image);
       break;
     case STRING:
       t = jj_consume_token(STRING);
-                  System.out.println("VALORES DE REFERENCIA: " + t.image);
+                    System.out.println("VALORES DE REFERENCIA: " + t.image);
       break;
     case BOOL:
       t = jj_consume_token(BOOL);
-                System.out.println("VALORES DE TIPOS: " + t.image);
+                  System.out.println("VALORES DE TIPOS: " + t.image);
       break;
     case BYTE:
       t = jj_consume_token(BYTE);
-                System.out.println("VALORES DE TIPOS: " + t.image);
+                  System.out.println("VALORES DE TIPOS: " + t.image);
       break;
     case DECIMAL:
       t = jj_consume_token(DECIMAL);
-                   System.out.println("VALORES DE TIPOS: " + t.image);
+                     System.out.println("VALORES DE TIPOS: " + t.image);
       break;
     case DOUBLE:
       t = jj_consume_token(DOUBLE);
-                  System.out.println("VALORES DE TIPOS: " + t.image);
+                    System.out.println("VALORES DE TIPOS: " + t.image);
       break;
     case INT:
       t = jj_consume_token(INT);
-               System.out.println("VALORES DE TIPOS: " + t.image);
+                 System.out.println("VALORES DE TIPOS: " + t.image);
       break;
     case FLOAT:
       t = jj_consume_token(FLOAT);
-                 System.out.println("VALORES DE TIPOS: " + t.image);
+                   System.out.println("VALORES DE TIPOS: " + t.image);
       break;
     case LONG:
       t = jj_consume_token(LONG);
-                System.out.println("VALORES DE TIPOS: " + t.image);
+                  System.out.println("VALORES DE TIPOS: " + t.image);
       break;
     case SBYTE:
       t = jj_consume_token(SBYTE);
-                 System.out.println("VALORES DE TIPOS: " + t.image);
+                   System.out.println("VALORES DE TIPOS: " + t.image);
       break;
     case SHORT:
       t = jj_consume_token(SHORT);
-                 System.out.println("VALORES DE TIPOS: " + t.image);
+                   System.out.println("VALORES DE TIPOS: " + t.image);
       break;
     case UINT:
       t = jj_consume_token(UINT);
-                System.out.println("VALORES DE TIPOS: " + t.image);
+                  System.out.println("VALORES DE TIPOS: " + t.image);
       break;
     case ULONG:
       t = jj_consume_token(ULONG);
-                 System.out.println("VALORES DE TIPOS: " + t.image);
+                   System.out.println("VALORES DE TIPOS: " + t.image);
       break;
     case USHORT:
       t = jj_consume_token(USHORT);
-                  System.out.println("VALORES DE TIPOS: " + t.image);
+                    System.out.println("VALORES DE TIPOS: " + t.image);
       break;
     case ADD:
       t = jj_consume_token(ADD);
-               System.out.println("PALAVRA CONTEXTUAL: " + t.image);
+                 System.out.println("PALAVRA CONTEXTUAL: " + t.image);
       break;
     case ALIAS:
       t = jj_consume_token(ALIAS);
-                 System.out.println("PALAVRA CONTEXTUAL: " + t.image);
+                   System.out.println("PALAVRA CONTEXTUAL: " + t.image);
       break;
     case ASCENDING:
       t = jj_consume_token(ASCENDING);
-                     System.out.println("PALAVRA CONTEXTUAL: " + t.image);
+                       System.out.println("PALAVRA CONTEXTUAL: " + t.image);
       break;
     case ASYNC:
       t = jj_consume_token(ASYNC);
-                 System.out.println("PALAVRA CONTEXTUAL: " + t.image);
+                   System.out.println("PALAVRA CONTEXTUAL: " + t.image);
       break;
     case AWAIT:
       t = jj_consume_token(AWAIT);
-                 System.out.println("PALAVRA CONTEXTUAL: " + t.image);
+                   System.out.println("PALAVRA CONTEXTUAL: " + t.image);
       break;
     case BY:
       t = jj_consume_token(BY);
-              System.out.println("PALAVRA CONTEXTUAL: " + t.image);
+                System.out.println("PALAVRA CONTEXTUAL: " + t.image);
       break;
     case DESCENDING:
       t = jj_consume_token(DESCENDING);
-                      System.out.println("PALAVRA CONTEXTUAL: " + t.image);
+                        System.out.println("PALAVRA CONTEXTUAL: " + t.image);
       break;
     case DYNAMIC:
       t = jj_consume_token(DYNAMIC);
-                   System.out.println("PALAVRA CONTEXTUAL: " + t.image);
+                     System.out.println("PALAVRA CONTEXTUAL: " + t.image);
       break;
     case EQUALS:
       t = jj_consume_token(EQUALS);
-                  System.out.println("PALAVRA CONTEXTUAL: " + t.image);
+                    System.out.println("PALAVRA CONTEXTUAL: " + t.image);
       break;
     case FROM:
       t = jj_consume_token(FROM);
-                System.out.println("PALAVRA CONTEXTUAL: " + t.image);
+                  System.out.println("PALAVRA CONTEXTUAL: " + t.image);
       break;
     case GET:
       t = jj_consume_token(GET);
-               System.out.println("PALAVRA CONTEXTUAL: " + t.image);
+                 System.out.println("PALAVRA CONTEXTUAL: " + t.image);
       break;
     case GLOBAL:
       t = jj_consume_token(GLOBAL);
-                  System.out.println("PALAVRA CONTEXTUAL: " + t.image);
+                    System.out.println("PALAVRA CONTEXTUAL: " + t.image);
       break;
     case GROUP:
       t = jj_consume_token(GROUP);
-                 System.out.println("PALAVRA CONTEXTUAL: " + t.image);
+                   System.out.println("PALAVRA CONTEXTUAL: " + t.image);
       break;
     case INTO:
       t = jj_consume_token(INTO);
-                System.out.println("PALAVRA CONTEXTUAL: " + t.image);
+                  System.out.println("PALAVRA CONTEXTUAL: " + t.image);
       break;
     case JOIN:
       t = jj_consume_token(JOIN);
-                System.out.println("PALAVRA CONTEXTUAL: " + t.image);
+                  System.out.println("PALAVRA CONTEXTUAL: " + t.image);
       break;
     case LET:
       t = jj_consume_token(LET);
-               System.out.println("PALAVRA CONTEXTUAL: " + t.image);
+                 System.out.println("PALAVRA CONTEXTUAL: " + t.image);
       break;
     case NAMEOF:
       t = jj_consume_token(NAMEOF);
-                  System.out.println("PALAVRA CONTEXTUAL: " + t.image);
+                    System.out.println("PALAVRA CONTEXTUAL: " + t.image);
       break;
     case ON:
       t = jj_consume_token(ON);
-              System.out.println("PALAVRA CONTEXTUAL: " + t.image);
+                System.out.println("PALAVRA CONTEXTUAL: " + t.image);
       break;
     case ORDERBY:
       t = jj_consume_token(ORDERBY);
-                   System.out.println("PALAVRA CONTEXTUAL: " + t.image);
+                     System.out.println("PALAVRA CONTEXTUAL: " + t.image);
       break;
     case PARTIAL:
       t = jj_consume_token(PARTIAL);
-                   System.out.println("PALAVRA CONTEXTUAL: " + t.image);
+                     System.out.println("PALAVRA CONTEXTUAL: " + t.image);
       break;
     case REMOVE:
       t = jj_consume_token(REMOVE);
-                  System.out.println("PALAVRA CONTEXTUAL: " + t.image);
+                    System.out.println("PALAVRA CONTEXTUAL: " + t.image);
       break;
     case SELECT:
       t = jj_consume_token(SELECT);
-                  System.out.println("PALAVRA CONTEXTUAL: " + t.image);
+                    System.out.println("PALAVRA CONTEXTUAL: " + t.image);
       break;
     case SET:
       t = jj_consume_token(SET);
-               System.out.println("PALAVRA CONTEXTUAL: " + t.image);
+                 System.out.println("PALAVRA CONTEXTUAL: " + t.image);
       break;
     case UNMANAGED:
       t = jj_consume_token(UNMANAGED);
-                     System.out.println("PALAVRA CONTEXTUAL: " + t.image);
+                       System.out.println("PALAVRA CONTEXTUAL: " + t.image);
       break;
     case VALUE:
       t = jj_consume_token(VALUE);
-                 System.out.println("PALAVRA CONTEXTUAL: " + t.image);
+                   System.out.println("PALAVRA CONTEXTUAL: " + t.image);
       break;
     case VAR:
       t = jj_consume_token(VAR);
-               System.out.println("PALAVRA CONTEXTUAL: " + t.image);
+                 System.out.println("PALAVRA CONTEXTUAL: " + t.image);
       break;
     case WHEN:
       t = jj_consume_token(WHEN);
-                System.out.println("PALAVRA CONTEXTUAL: " + t.image);
+                  System.out.println("PALAVRA CONTEXTUAL: " + t.image);
       break;
     case WHERE:
       t = jj_consume_token(WHERE);
-                 System.out.println("PALAVRA CONTEXTUAL: " + t.image);
+                   System.out.println("PALAVRA CONTEXTUAL: " + t.image);
       break;
     case YIELD:
       t = jj_consume_token(YIELD);
-                 System.out.println("PALAVRA CONTEXTUAL: " + t.image);
+                   System.out.println("PALAVRA CONTEXTUAL: " + t.image);
       break;
     case ABSTRACT:
       t = jj_consume_token(ABSTRACT);
-                    System.out.println("PALAVRA RESERVADA: " + t.image);
+                      System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case AS:
       t = jj_consume_token(AS);
-              System.out.println("PALAVRA RESERVADA: " + t.image);
+                System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case BASE:
       t = jj_consume_token(BASE);
-                System.out.println("PALAVRA RESERVADA: " + t.image);
+                  System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case BREAK:
       t = jj_consume_token(BREAK);
-                 System.out.println("PALAVRA RESERVADA: " + t.image);
+                   System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case CASE:
       t = jj_consume_token(CASE);
-                System.out.println("PALAVRA RESERVADA: " + t.image);
+                  System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case CATCH:
       t = jj_consume_token(CATCH);
-                 System.out.println("PALAVRA RESERVADA: " + t.image);
+                   System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case CHECKED:
       t = jj_consume_token(CHECKED);
-                   System.out.println("PALAVRA RESERVADA: " + t.image);
+                     System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case CLASS:
       t = jj_consume_token(CLASS);
-                 System.out.println("PALAVRA RESERVADA: " + t.image);
+                   System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case CONST:
       t = jj_consume_token(CONST);
-                 System.out.println("PALAVRA RESERVADA: " + t.image);
+                   System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case CONTINUE:
       t = jj_consume_token(CONTINUE);
-                    System.out.println("PALAVRA RESERVADA: " + t.image);
+                      System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case _DEFAULT:
       t = jj_consume_token(_DEFAULT);
-                    System.out.println("PALAVRA RESERVADA: " + t.image);
+                      System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case DO:
       t = jj_consume_token(DO);
-              System.out.println("PALAVRA RESERVADA: " + t.image);
+                System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case ELSE:
       t = jj_consume_token(ELSE);
-                System.out.println("PALAVRA RESERVADA: " + t.image);
+                  System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case EVENT:
       t = jj_consume_token(EVENT);
-                 System.out.println("PALAVRA RESERVADA: " + t.image);
+                   System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case EXPLICIT:
       t = jj_consume_token(EXPLICIT);
-                    System.out.println("PALAVRA RESERVADA: " + t.image);
+                      System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case EXTERN:
       t = jj_consume_token(EXTERN);
-                  System.out.println("PALAVRA RESERVADA: " + t.image);
+                    System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case _FALSE:
       t = jj_consume_token(_FALSE);
-                  System.out.println("PALAVRA RESERVADA: " + t.image);
+                    System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case FINALLY:
       t = jj_consume_token(FINALLY);
-                   System.out.println("PALAVRA RESERVADA: " + t.image);
+                     System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case FIXED:
       t = jj_consume_token(FIXED);
-                 System.out.println("PALAVRA RESERVADA: " + t.image);
+                   System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case FOR:
       t = jj_consume_token(FOR);
-               System.out.println("PALAVRA RESERVADA: " + t.image);
+                 System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case FOREACH:
       t = jj_consume_token(FOREACH);
-                   System.out.println("PALAVRA RESERVADA: " + t.image);
+                     System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case GOTO:
       t = jj_consume_token(GOTO);
-                System.out.println("PALAVRA RESERVADA: " + t.image);
+                  System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case IF:
       t = jj_consume_token(IF);
-              System.out.println("PALAVRA RESERVADA: " + t.image);
+                System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case IMPLICIT:
       t = jj_consume_token(IMPLICIT);
-                    System.out.println("PALAVRA RESERVADA: " + t.image);
+                      System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case IN:
       t = jj_consume_token(IN);
-              System.out.println("PALAVRA RESERVADA: " + t.image);
+                System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case INTERFACE:
       t = jj_consume_token(INTERFACE);
-                     System.out.println("PALAVRA RESERVADA: " + t.image);
+                       System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case INTERNAL:
       t = jj_consume_token(INTERNAL);
-                    System.out.println("PALAVRA RESERVADA: " + t.image);
+                      System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case IS:
       t = jj_consume_token(IS);
-              System.out.println("PALAVRA RESERVADA: " + t.image);
+                System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case LOCK:
       t = jj_consume_token(LOCK);
-                System.out.println("PALAVRA RESERVADA: " + t.image);
+                  System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case NAMESPACE:
       t = jj_consume_token(NAMESPACE);
-                     System.out.println("PALAVRA RESERVADA: " + t.image);
+                       System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case NEW:
       t = jj_consume_token(NEW);
-               System.out.println("PALAVRA RESERVADA: " + t.image);
+                 System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case _NULL:
       t = jj_consume_token(_NULL);
-                 System.out.println("PALAVRA RESERVADA: " + t.image);
+                   System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case OPERATOR:
       t = jj_consume_token(OPERATOR);
-                    System.out.println("PALAVRA RESERVADA: " + t.image);
+                      System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case OUT:
       t = jj_consume_token(OUT);
-               System.out.println("PALAVRA RESERVADA: " + t.image);
+                 System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case OVERRIDE:
       t = jj_consume_token(OVERRIDE);
-                    System.out.println("PALAVRA RESERVADA: " + t.image);
+                      System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case PARAMS:
       t = jj_consume_token(PARAMS);
-                  System.out.println("PALAVRA RESERVADA: " + t.image);
+                    System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case PRIVATE:
       t = jj_consume_token(PRIVATE);
-                   System.out.println("PALAVRA RESERVADA: " + t.image);
+                     System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case PROTECTED:
       t = jj_consume_token(PROTECTED);
-                     System.out.println("PALAVRA RESERVADA: " + t.image);
+                       System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case PUBLIC:
       t = jj_consume_token(PUBLIC);
-                  System.out.println("PALAVRA RESERVADA: " + t.image);
+                    System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case READONLY:
       t = jj_consume_token(READONLY);
-                    System.out.println("PALAVRA RESERVADA: " + t.image);
+                      System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case REF:
       t = jj_consume_token(REF);
-               System.out.println("PALAVRA RESERVADA: " + t.image);
+                 System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case RETURN:
       t = jj_consume_token(RETURN);
-                  System.out.println("PALAVRA RESERVADA: " + t.image);
+                    System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case SEALED:
       t = jj_consume_token(SEALED);
-                  System.out.println("PALAVRA RESERVADA: " + t.image);
+                    System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case SIZEOF:
       t = jj_consume_token(SIZEOF);
-                  System.out.println("PALAVRA RESERVADA: " + t.image);
+                    System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case STACKALLOC:
       t = jj_consume_token(STACKALLOC);
-                      System.out.println("PALAVRA RESERVADA: " + t.image);
+                        System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case STATIC:
       t = jj_consume_token(STATIC);
-                  System.out.println("PALAVRA RESERVADA: " + t.image);
+                    System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case SWITCH:
       t = jj_consume_token(SWITCH);
-                  System.out.println("PALAVRA RESERVADA: " + t.image);
+                    System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case THIS:
       t = jj_consume_token(THIS);
-                System.out.println("PALAVRA RESERVADA: " + t.image);
+                  System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case THROW:
       t = jj_consume_token(THROW);
-                 System.out.println("PALAVRA RESERVADA: " + t.image);
+                   System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case _TRUE:
       t = jj_consume_token(_TRUE);
-                 System.out.println("PALAVRA RESERVADA: " + t.image);
+                   System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case TRY:
       t = jj_consume_token(TRY);
-               System.out.println("PALAVRA RESERVADA: " + t.image);
+                 System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case TYPEOF:
       t = jj_consume_token(TYPEOF);
-                  System.out.println("PALAVRA RESERVADA: " + t.image);
+                    System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case UNCHECKED:
       t = jj_consume_token(UNCHECKED);
-                     System.out.println("PALAVRA RESERVADA: " + t.image);
+                       System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case UNSAFE:
       t = jj_consume_token(UNSAFE);
-                  System.out.println("PALAVRA RESERVADA: " + t.image);
+                    System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case USING:
       t = jj_consume_token(USING);
-                 System.out.println("PALAVRA RESERVADA: " + t.image);
+                   System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case VIRTUAL:
       t = jj_consume_token(VIRTUAL);
-                   System.out.println("PALAVRA RESERVADA: " + t.image);
+                     System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case VOID:
       t = jj_consume_token(VOID);
-                System.out.println("PALAVRA RESERVADA: " + t.image);
+                  System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case VOLATILE:
       t = jj_consume_token(VOLATILE);
-                    System.out.println("PALAVRA RESERVADA: " + t.image);
+                      System.out.println("PALAVRA RESERVADA: " + t.image);
       break;
     case WHILE:
       t = jj_consume_token(WHILE);
-                 System.out.println("PALAVRA RESERVADA: " + t.image);
+                   System.out.println("PALAVRA RESERVADA: " + t.image);
+      break;
+    case INTEGER_LITERAL:
+      t = jj_consume_token(INTEGER_LITERAL);
+                           System.out.println("INTEGER_LITERAL: " + t.image);
+      break;
+    case UNICODE_ESCAPE:
+      t = jj_consume_token(UNICODE_ESCAPE);
+                          System.out.println("UNICODE: " + t.image);
+      break;
+    case SINGLE_LINE_COMMENT:
+      t = jj_consume_token(SINGLE_LINE_COMMENT);
+                               System.out.println("COMENTARIO LINHA: " + t.image);
+      break;
+    case DELIMITED_COMMENT:
+      t = jj_consume_token(DELIMITED_COMMENT);
+                             System.out.println("COMENTARIO DELIMITADO: " + t.image);
       break;
     case ID:
       t = jj_consume_token(ID);
-              System.out.println("ID " + t.image);
-      break;
-    case NUM:
-      t = jj_consume_token(NUM);
-               System.out.println("NUM " + t.image);
-      break;
-    case FLOAT_NUM:
-      t = jj_consume_token(FLOAT_NUM);
-                     System.out.println("FLOAT_NUM " + t.image);
-      break;
-    case _STRING:
-      t = jj_consume_token(_STRING);
-                   System.out.println("STRING " + t.image);
+              System.out.println("ID: " + t.image);
       break;
     default:
       jj_la1[1] = jj_gen;
@@ -863,7 +868,7 @@ public class comp implements compConstants {
       jj_la1_4 = new int[] {0xffffffff,0xffffffff,};
    }
    private static void jj_la1_init_5() {
-      jj_la1_5 = new int[] {0x58,0x58,};
+      jj_la1_5 = new int[] {0x400b,0x400b,};
    }
 
   /** Constructor with InputStream. */
@@ -1001,7 +1006,7 @@ public class comp implements compConstants {
   /** Generate ParseException. */
   static public ParseException generateParseException() {
     jj_expentries.clear();
-    boolean[] la1tokens = new boolean[170];
+    boolean[] la1tokens = new boolean[177];
     if (jj_kind >= 0) {
       la1tokens[jj_kind] = true;
       jj_kind = -1;
@@ -1030,7 +1035,7 @@ public class comp implements compConstants {
         }
       }
     }
-    for (int i = 0; i < 170; i++) {
+    for (int i = 0; i < 177; i++) {
       if (la1tokens[i]) {
         jj_expentry = new int[1];
         jj_expentry[0] = i;

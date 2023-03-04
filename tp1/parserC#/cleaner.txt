@@ -1,0 +1,95 @@
+TOKEN:
+{
+	<INTEGER_LITERAL: 
+		(<DECIMAL_INTEGER_LITERAL> | <HEXADECIMAL_INTEGER_LITERAL> | <BINARY_INTEGER_LITERAL>)
+	>
+	| 
+	<#DECIMAL_INTEGER_LITERAL: 
+		<DECIMAL_DIGIT> (<DECORATED_DECIMAL_DIGIT>)* (<INTEGER_TYPE_SUFFIX>)?
+	>
+	| 
+	<#DECORATED_DECIMAL_DIGIT: 
+		("_")* <DECIMAL_DIGIT> 
+	>
+	| 
+	<#DECIMAL_DIGIT: 
+		["0"-"9"]>
+	| 
+	<#INTEGER_TYPE_SUFFIX: 
+		
+		/* Aqui estou tendo problemas, pois os caracteres
+		"UL" | "Ul" | "uL" | "ul" | "LU" | "Lu" | "lU" | "lu"
+		também devem ser incluidos, mas a regra do JavaCC não
+		permite multiplos caracteres entre aspas duplas.
+		*/
+
+		["U", "U", "L", "L"]
+	>
+	| 
+	<#HEXADECIMAL_INTEGER_LITERAL: 
+		("0" ["X","X"]) (<DECORATED_HEX_DIGIT>)+ (<INTEGER_TYPE_SUFFIX>)? 
+	>
+	| 
+	<#DECORATED_HEX_DIGIT: 
+		("_")* <HEX_DIGIT> 
+	>
+	| 
+	<#HEX_DIGIT: 
+		["0"-"9","A"-"F","A"-"F"]
+	>
+	| 
+	<#BINARY_INTEGER_LITERAL: 
+		("0" ["B","B"]) (<DECORATED_BINARY_DIGIT>)+ (<INTEGER_TYPE_SUFFIX>)? 
+	>
+	| 
+	<#DECORATED_BINARY_DIGIT: 
+		("_")* <BINARY_DIGIT> 
+	>
+	| 
+	<#BINARY_DIGIT: 
+		["0", "1"]
+	>
+}
+
+
+
+
+// REAL LITERAL
+TOKEN:
+{
+
+}
+
+// CHARACTER LITERAL
+TOKEN:
+{
+
+}
+
+// STRING LITERAL
+TOKEN:
+{
+
+}
+
+
+
+123
+10_543_765Lu
+1_2__3___4____5
+_123
+123_
+
+0xFf
+0X1b_a0_44_fEL
+0x1ade_3FE1_29AaUL
+0x_abc
+_0x123
+0xabc_
+
+0b101
+0B1001_1010u
+0b1111_1111_0000UL
+0B__111
+__0B111
+0B111__

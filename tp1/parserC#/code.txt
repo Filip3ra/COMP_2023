@@ -1,14 +1,17 @@
-/ linha
 
 using System;
- 
+
 namespace HelloWorld
 {
     class Hello {         
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine('Hello World!');
+		int i  = 56;
+		string _bananas = "bananas";
+		Console.WriteLine("Hello World!" + i);
+		string name = Console.ReadLine();
+		Console.WriteLine("Hello " + name);
+	    
         }
     }
 }

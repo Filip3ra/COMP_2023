@@ -317,27 +317,41 @@ public interface compConstants {
   /** RegularExpression Id. */
   int RSHIFTASSIGNMENT = 158;
   /** RegularExpression Id. */
-  int ID = 159;
+  int SINGLE_LINE_COMMENT = 159;
   /** RegularExpression Id. */
-  int LETTER = 160;
+  int DELIMITED_COMMENT = 160;
   /** RegularExpression Id. */
-  int DIGIT = 161;
+  int UNICODE_ESCAPE = 161;
   /** RegularExpression Id. */
-  int COMMENT_DOUBLE_SLASH = 162;
+  int UNI_HEX_DIGIT = 162;
   /** RegularExpression Id. */
-  int NUM = 163;
+  int INTEGER_LITERAL = 163;
   /** RegularExpression Id. */
-  int FLOAT_NUM = 164;
+  int DECIMAL_INTEGER_LITERAL = 164;
   /** RegularExpression Id. */
-  int EXPONENT = 165;
+  int DECORATED_DECIMAL_DIGIT = 165;
   /** RegularExpression Id. */
-  int _STRING = 166;
+  int DECIMAL_DIGIT = 166;
   /** RegularExpression Id. */
-  int QUOTEDSTRING = 167;
+  int INTEGER_TYPE_SUFFIX = 167;
   /** RegularExpression Id. */
-  int DOUBLEQUOTEDSTRING = 168;
+  int HEXADECIMAL_INTEGER_LITERAL = 168;
   /** RegularExpression Id. */
-  int STRINGCHARACTER = 169;
+  int DECORATED_HEX_DIGIT = 169;
+  /** RegularExpression Id. */
+  int HEX_DIGIT = 170;
+  /** RegularExpression Id. */
+  int BINARY_INTEGER_LITERAL = 171;
+  /** RegularExpression Id. */
+  int DECORATED_BINARY_DIGIT = 172;
+  /** RegularExpression Id. */
+  int BINARY_DIGIT = 173;
+  /** RegularExpression Id. */
+  int ID = 174;
+  /** RegularExpression Id. */
+  int LETTER = 175;
+  /** RegularExpression Id. */
+  int DIGIT = 176;
 
   /** Lexical state. */
   int DEFAULT = 0;
@@ -503,17 +517,24 @@ public interface compConstants {
     "\"=>\"",
     "\">>\"",
     "\">>=\"",
+    "<SINGLE_LINE_COMMENT>",
+    "<DELIMITED_COMMENT>",
+    "<UNICODE_ESCAPE>",
+    "<UNI_HEX_DIGIT>",
+    "<INTEGER_LITERAL>",
+    "<DECIMAL_INTEGER_LITERAL>",
+    "<DECORATED_DECIMAL_DIGIT>",
+    "<DECIMAL_DIGIT>",
+    "<INTEGER_TYPE_SUFFIX>",
+    "<HEXADECIMAL_INTEGER_LITERAL>",
+    "<DECORATED_HEX_DIGIT>",
+    "<HEX_DIGIT>",
+    "<BINARY_INTEGER_LITERAL>",
+    "<DECORATED_BINARY_DIGIT>",
+    "<BINARY_DIGIT>",
     "<ID>",
     "<LETTER>",
     "<DIGIT>",
-    "<COMMENT_DOUBLE_SLASH>",
-    "<NUM>",
-    "<FLOAT_NUM>",
-    "<EXPONENT>",
-    "<_STRING>",
-    "<QUOTEDSTRING>",
-    "<DOUBLEQUOTEDSTRING>",
-    "<STRINGCHARACTER>",
   };
 
 }
