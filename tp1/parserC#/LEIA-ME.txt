@@ -1,0 +1,11 @@
+INSTRUÇÕES: 
+
+1º javacc comp.jj
+
+2º javac *.java  
+Obs: aparece alguns warnings mas nada comprometedor
+
+3º java comp < main.cs
+   java comp < ex1.cs
+   java comp < ex2.cs
+   java comp < ex3.cs

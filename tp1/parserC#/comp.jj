@@ -1,3 +1,5 @@
+/*** Autor: Filipi Maciel ***/
+
 PARSER_BEGIN(comp)
 
 public class comp {
@@ -240,11 +242,15 @@ TOKEN:
 /* Para os tipos de valores a abordagem inicial foi algo mais 
    simples e que pudesse identificar os tipos mais básicos, que
    são números, ponto flutuantes, notação ciêntifica, string, etc.
+
+   Entretando, a estrutura léxica do C# define diversos literais, como 
+   string literals, chacater literals, etc., que requer uma estrutura
+   muito mais complexa, implementada mais a frente no código. 
+   De toda forma, deixo o código aqui para mostrar que também fiz dessa forma.
 */
 
-   
-
 /**** TYPE VALUES ****/
+
 /*
 TOKEN :
 {
@@ -268,10 +274,6 @@ TOKEN :
   |
     < _STRING:
     (<DOUBLEQUOTEDSTRING>)+
-  >
-  |
-    < QUOTEDSTRING:
-    ["\'"] (<CHARACTER>)* ["\'"]
   >
   |
     < #DOUBLEQUOTEDSTRING:
@@ -301,11 +303,27 @@ TOKEN :
         )
     >
 }
+*/
 
- */
+/*********************************************************************/
 
 
+// Seguinto a estrutura lexica do C# no link disponibilizado no trabalho
 
+/**** IDENTIFIERS ****/
+
+TOKEN:
+{
+    < ID: <LETTER> (<LETTER>|<DIGIT>)* >
+  |
+    < #LETTER:
+        ["A"-"Z","_","a"-"z"]
+    >
+  |
+    < #DIGIT:
+        ["0"-"9"]
+    >
+}
 
 
 /**** LITERALS ****/
@@ -363,25 +381,111 @@ TOKEN:
 }
 
 
-/**** IDENTIFIERS ****/
-
+// REAL LITERAL
 TOKEN:
 {
-    < ID: <LETTER> (<LETTER>|<DIGIT>)* >
+  <REAL_LITERAL:
+    (<DECIMAL_DIGIT> (<DECORATED_DECIMAL_DIGIT>)* "." <DECIMAL_DIGIT> (<DECORATED_DECIMAL_DIGIT>)* (<EXPONENT_PART>)? (<REAL_TYPE_SUFFIX>)?)
+    | ("." <DECIMAL_DIGIT> (<DECORATED_DECIMAL_DIGIT>)* (<EXPONENT_PART>)? (<REAL_TYPE_SUFFIX>)?)
+    | (<DECIMAL_DIGIT> (<DECORATED_DECIMAL_DIGIT>)* <EXPONENT_PART> (<REAL_TYPE_SUFFIX>)? )
+    | (<DECIMAL_DIGIT> (<DECORATED_DECIMAL_DIGIT>)* <REAL_TYPE_SUFFIX>)
+  >
   |
-    < #LETTER:
-        ["A"-"Z","_","a"-"z"]
-    >
+  <#EXPONENT_PART:
+    (["e", "E"]) (<SIGN>)? <DECIMAL_DIGIT> (<DECORATED_DECIMAL_DIGIT>)*
+  >
   |
-    < #DIGIT:
-        ["0"-"9"]
-    >
+  <#SIGN: 
+    (["+", "-"])
+  >
+  |
+  <#REAL_TYPE_SUFFIX: 
+    (["F", "f", "D", "d", "M", "m"])
+  >
 }
 
 
-/*********************************************************************/
+// CHARACTER LITERAL
+TOKEN:
+{	  
+  < CHARACTER_LITERAL: 
+    "'" (<CHARACTER>) "'" 
+	>
+	|
+	<#CHARACTER:
+      (<SINGLE_CHARACTER> 
+      | <SIMPLE_ESCAPE_SEQUENCE> 
+      | <HEXADECIMAL_ESCAPE_SEQUENCE> 
+      | <UNICODE_ESCAPE>) 
+  >
+	|
+  < #SINGLE_CHARACTER: 
+    (~["'", ",", "\\", "\n"]) 
+  >
+	|
+  < #SIMPLE_ESCAPE_SEQUENCE:
+      ["\\", "\0", "\b", "\f", "\n", "\r", "\t"]
+      //("\\" ["\'", "\""])
+  >
+	|
+  < #HEXADECIMAL_ESCAPE_SEQUENCE: 
+    "\\x" (<HEX_DIGIT> (<HEX_DIGIT>)? (<HEX_DIGIT>)? (<HEX_DIGIT>)? ) 
+  >
+}
 
+// STRING LITERAL
+TOKEN:
+{
+  <STRING_LITERAL: 
+    <REGULAR_STRING_LITERAL> 
+    | <VERBATIM_STRING_LITERAL>
+  >
+  |
+  <#REGULAR_STRING_LITERAL: 
+    "\"" (<REGULAR_STRING_LITERAL_CHARACTER>)* "\"" 
+  >
+  | 
+  <#REGULAR_STRING_LITERAL_CHARACTER:
+    <SINGLE_REGULAR_STRING_LITERAL_CHARACTER>
+    | <HEXADECIMAL_ESCAPE_SEQUENCE> 
+    | <UNICODE_ESCAPE>
+  >
+  |
+  <#SINGLE_REGULAR_STRING_LITERAL_CHARACTER: 
+      <STRINGCHARACTER>
+  >
+  |
+    < #STRINGCHARACTER:
+        (   (~["\"","\\","\n","\r"])
+          | ("\\"
+              ( ["n","t","b","r","f","\\","'","\""]
+              | ["0"-"7"] ( ["0"-"7"] )?
+              | ["0"-"3"] ["0"-"7"] ["0"-"7"]
+              )
+            )
+          |
+            ["\""]
+        )*
+    >
+  |  
+  <#VERBATIM_STRING_LITERAL: 
+    "@" "\"" (<VERBATIM_STRING_LITERAL_CHARACTER>)* "\"" 
+  >
+  |
+  <#VERBATIM_STRING_LITERAL_CHARACTER: 
+    <SINGLE_VERBATIM_STRING_LITERAL_CHARACTER> 
+    | <QUOTE_ESCAPE_SEQUENCE>
+  >
+  |
+  <#SINGLE_VERBATIM_STRING_LITERAL_CHARACTER: 
+    (~["\""])
+  >
+  | 
+  <#QUOTE_ESCAPE_SEQUENCE: 
+    """"
+  >
 
+}
 
 
 
@@ -559,6 +663,9 @@ void term() :
 
 
 |   t = <INTEGER_LITERAL> {System.out.println("INTEGER_LITERAL: " + t.image);}
+|   t = <REAL_LITERAL> {System.out.println("REAL_LITERAL: " + t.image);}
+|   t = <CHARACTER_LITERAL> {System.out.println("CHARACTER_LITERAL: " + t.image);}
+|   t = <STRING_LITERAL> {System.out.println("STRING_LITERAL: " + t.image);}
 
 |   t = <UNICODE_ESCAPE> {System.out.println("UNICODE: " + t.image);}
 

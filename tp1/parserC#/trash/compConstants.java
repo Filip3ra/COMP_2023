@@ -325,33 +325,69 @@ public interface compConstants {
   /** RegularExpression Id. */
   int UNI_HEX_DIGIT = 162;
   /** RegularExpression Id. */
-  int INTEGER_LITERAL = 163;
+  int ID = 163;
   /** RegularExpression Id. */
-  int DECIMAL_INTEGER_LITERAL = 164;
+  int LETTER = 164;
   /** RegularExpression Id. */
-  int DECORATED_DECIMAL_DIGIT = 165;
+  int DIGIT = 165;
   /** RegularExpression Id. */
-  int DECIMAL_DIGIT = 166;
+  int INTEGER_LITERAL = 166;
   /** RegularExpression Id. */
-  int INTEGER_TYPE_SUFFIX = 167;
+  int DECIMAL_INTEGER_LITERAL = 167;
   /** RegularExpression Id. */
-  int HEXADECIMAL_INTEGER_LITERAL = 168;
+  int DECORATED_DECIMAL_DIGIT = 168;
   /** RegularExpression Id. */
-  int DECORATED_HEX_DIGIT = 169;
+  int DECIMAL_DIGIT = 169;
   /** RegularExpression Id. */
-  int HEX_DIGIT = 170;
+  int INTEGER_TYPE_SUFFIX = 170;
   /** RegularExpression Id. */
-  int BINARY_INTEGER_LITERAL = 171;
+  int HEXADECIMAL_INTEGER_LITERAL = 171;
   /** RegularExpression Id. */
-  int DECORATED_BINARY_DIGIT = 172;
+  int DECORATED_HEX_DIGIT = 172;
   /** RegularExpression Id. */
-  int BINARY_DIGIT = 173;
+  int HEX_DIGIT = 173;
   /** RegularExpression Id. */
-  int ID = 174;
+  int BINARY_INTEGER_LITERAL = 174;
   /** RegularExpression Id. */
-  int LETTER = 175;
+  int DECORATED_BINARY_DIGIT = 175;
   /** RegularExpression Id. */
-  int DIGIT = 176;
+  int BINARY_DIGIT = 176;
+  /** RegularExpression Id. */
+  int REAL_LITERAL = 177;
+  /** RegularExpression Id. */
+  int EXPONENT_PART = 178;
+  /** RegularExpression Id. */
+  int SIGN = 179;
+  /** RegularExpression Id. */
+  int REAL_TYPE_SUFFIX = 180;
+  /** RegularExpression Id. */
+  int CHARACTER_LITERAL = 181;
+  /** RegularExpression Id. */
+  int CHARACTER = 182;
+  /** RegularExpression Id. */
+  int SINGLE_CHARACTER = 183;
+  /** RegularExpression Id. */
+  int SIMPLE_ESCAPE_SEQUENCE = 184;
+  /** RegularExpression Id. */
+  int HEXADECIMAL_ESCAPE_SEQUENCE = 185;
+  /** RegularExpression Id. */
+  int STRING_LITERAL = 186;
+  /** RegularExpression Id. */
+  int REGULAR_STRING_LITERAL = 187;
+  /** RegularExpression Id. */
+  int REGULAR_STRING_LITERAL_CHARACTER = 188;
+  /** RegularExpression Id. */
+  int SINGLE_REGULAR_STRING_LITERAL_CHARACTER = 189;
+  /** RegularExpression Id. */
+  int STRINGCHARACTER = 190;
+  /** RegularExpression Id. */
+  int VERBATIM_STRING_LITERAL = 191;
+  /** RegularExpression Id. */
+  int VERBATIM_STRING_LITERAL_CHARACTER = 192;
+  /** RegularExpression Id. */
+  int SINGLE_VERBATIM_STRING_LITERAL_CHARACTER = 193;
+  /** RegularExpression Id. */
+  int QUOTE_ESCAPE_SEQUENCE = 194;
 
   /** Lexical state. */
   int DEFAULT = 0;
@@ -521,6 +557,9 @@ public interface compConstants {
     "<DELIMITED_COMMENT>",
     "<UNICODE_ESCAPE>",
     "<UNI_HEX_DIGIT>",
+    "<ID>",
+    "<LETTER>",
+    "<DIGIT>",
     "<INTEGER_LITERAL>",
     "<DECIMAL_INTEGER_LITERAL>",
     "<DECORATED_DECIMAL_DIGIT>",
@@ -532,9 +571,24 @@ public interface compConstants {
     "<BINARY_INTEGER_LITERAL>",
     "<DECORATED_BINARY_DIGIT>",
     "<BINARY_DIGIT>",
-    "<ID>",
-    "<LETTER>",
-    "<DIGIT>",
+    "<REAL_LITERAL>",
+    "<EXPONENT_PART>",
+    "<SIGN>",
+    "<REAL_TYPE_SUFFIX>",
+    "<CHARACTER_LITERAL>",
+    "<CHARACTER>",
+    "<SINGLE_CHARACTER>",
+    "<SIMPLE_ESCAPE_SEQUENCE>",
+    "<HEXADECIMAL_ESCAPE_SEQUENCE>",
+    "<STRING_LITERAL>",
+    "<REGULAR_STRING_LITERAL>",
+    "<REGULAR_STRING_LITERAL_CHARACTER>",
+    "<SINGLE_REGULAR_STRING_LITERAL_CHARACTER>",
+    "<STRINGCHARACTER>",
+    "<VERBATIM_STRING_LITERAL>",
+    "<VERBATIM_STRING_LITERAL_CHARACTER>",
+    "<SINGLE_VERBATIM_STRING_LITERAL_CHARACTER>",
+    "<QUOTE_ESCAPE_SEQUENCE>",
   };
 
 }

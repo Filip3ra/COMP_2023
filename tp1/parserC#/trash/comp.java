@@ -6,7 +6,6 @@ public class comp implements compConstants {
     parser.comp_input();
         }
 
-/*********************************************************************/
   static final public void comp_input() throws ParseException {
     term();
     label_1:
@@ -169,8 +168,11 @@ public class comp implements compConstants {
       case SINGLE_LINE_COMMENT:
       case DELIMITED_COMMENT:
       case UNICODE_ESCAPE:
-      case INTEGER_LITERAL:
       case ID:
+      case INTEGER_LITERAL:
+      case REAL_LITERAL:
+      case CHARACTER_LITERAL:
+      case STRING_LITERAL:
         ;
         break;
       default:
@@ -804,6 +806,18 @@ public class comp implements compConstants {
       t = jj_consume_token(INTEGER_LITERAL);
                            System.out.println("INTEGER_LITERAL: " + t.image);
       break;
+    case REAL_LITERAL:
+      t = jj_consume_token(REAL_LITERAL);
+                        System.out.println("REAL_LITERAL: " + t.image);
+      break;
+    case CHARACTER_LITERAL:
+      t = jj_consume_token(CHARACTER_LITERAL);
+                             System.out.println("CHARACTER_LITERAL: " + t.image);
+      break;
+    case STRING_LITERAL:
+      t = jj_consume_token(STRING_LITERAL);
+                          System.out.println("STRING_LITERAL: " + t.image);
+      break;
     case UNICODE_ESCAPE:
       t = jj_consume_token(UNICODE_ESCAPE);
                           System.out.println("UNICODE: " + t.image);
@@ -844,6 +858,7 @@ public class comp implements compConstants {
   static private int[] jj_la1_3;
   static private int[] jj_la1_4;
   static private int[] jj_la1_5;
+  static private int[] jj_la1_6;
   static {
       jj_la1_init_0();
       jj_la1_init_1();
@@ -851,6 +866,7 @@ public class comp implements compConstants {
       jj_la1_init_3();
       jj_la1_init_4();
       jj_la1_init_5();
+      jj_la1_init_6();
    }
    private static void jj_la1_init_0() {
       jj_la1_0 = new int[] {0xffffffe0,0xffffffe0,};
@@ -868,7 +884,10 @@ public class comp implements compConstants {
       jj_la1_4 = new int[] {0xffffffff,0xffffffff,};
    }
    private static void jj_la1_init_5() {
-      jj_la1_5 = new int[] {0x400b,0x400b,};
+      jj_la1_5 = new int[] {0x422004b,0x422004b,};
+   }
+   private static void jj_la1_init_6() {
+      jj_la1_6 = new int[] {0x0,0x0,};
    }
 
   /** Constructor with InputStream. */
@@ -1006,7 +1025,7 @@ public class comp implements compConstants {
   /** Generate ParseException. */
   static public ParseException generateParseException() {
     jj_expentries.clear();
-    boolean[] la1tokens = new boolean[177];
+    boolean[] la1tokens = new boolean[195];
     if (jj_kind >= 0) {
       la1tokens[jj_kind] = true;
       jj_kind = -1;
@@ -1032,10 +1051,13 @@ public class comp implements compConstants {
           if ((jj_la1_5[i] & (1<<j)) != 0) {
             la1tokens[160+j] = true;
           }
+          if ((jj_la1_6[i] & (1<<j)) != 0) {
+            la1tokens[192+j] = true;
+          }
         }
       }
     }
-    for (int i = 0; i < 177; i++) {
+    for (int i = 0; i < 195; i++) {
       if (la1tokens[i]) {
         jj_expentry = new int[1];
         jj_expentry[0] = i;
